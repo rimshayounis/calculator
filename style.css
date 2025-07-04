@@ -1,0 +1,112 @@
+/*
+
+.field {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: auto;
+  color: white;
+}
+
+.input {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-color: black;
+  border-radius: 5px;
+}
+
+
+.container {
+     margin: 8px auto 0 auto; 
+    display: grid;
+    grid-template-columns: repeat(5,  0.5fr); 
+    gap: 1.5px;
+    width: 300px;
+
+}
+
+.button {
+    border-color: black;
+    width: 100%;
+     height: 60px; 
+    font-size: 18px;
+    background-color: #4c4c4c;
+    color: white;
+   
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.wide, .wider {
+      display: flex; 
+     text-align: center;
+     align-items: center;
+     font-size: 18px ;
+     color: white;
+     border-radius: 8px ;
+     height: 60px ; 
+    background-color: #4c4c4c;
+}
+.wider {
+
+    background-color: red;
+
+}
+*/
+.field {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 10px; /* Changed from 'auto' to a fixed value for better spacing */
+  color: white;
+}
+
+.input {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.container {
+  margin: 8px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 0.5fr);
+  gap: 1.5px;
+  width: 300px;
+}
+
+.button {
+  border-color: black;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  background-color: #4c4c4c;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.wide, .wider {
+  display: flex;
+  justify-content: center;   /* Center the text horizontally */
+  align-items: center;       /* Center the text vertically */
+  font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  height: 60px;
+  background-color: #4c4c4c;
+  width: 100%;               /* Ensure full button width in grid */
+}
+
+/* Modified .wider class for Clear button */
+.wider {
+  background-color: red;
+  color: white;
+  grid-column: span 2;       /* Makes sure it takes 1 grid cell like other buttons */
+  width: 100%;
+}
